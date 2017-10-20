@@ -1,31 +1,41 @@
-# Решатель квадратных уравнений
-
-[TODO. Здесь будет описание проекта]
+# Quadratic equations solver
+The program helps to solve quadratic equasions
 
 Программа принимает на вход три числа (a, b, c), считает дискриминант квадратного уравнения и выводит кортеж из двух корней:
 1. Если дискриминант больше нуля, выводит два корня
 2. Если дискриминант равен нулю, выводит один корень и None
 3. Если дискриминант меньше нуля, выводит None, None
 
-# Как использовать
+# How to use
 
-[TODO. Здесь будет описание программного интерфейса: функции, их аргументы, формат ответа. Нужен пример кода демонстрирующий импорт модуля и использование функции.]
+Function get_roots(a, b, c) returns roots for the quadratic equation ax**2 + bx + c = 0
+
+Function output:
+
+root1, root2 if discriminant > 0
+root1, None if discriminant == 0
+None, None if discriminant < 0
 
 
+# How to launch
 
+Example:
 
-# Как запустить
-
-Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
-
-Запуск на Linux:
-
-```bash
-python tests.py # может понадобиться вызов python3 вместо python, зависит от настроек операционной системы
+```
+from quadratic_equation import get_roots
+root1, root2 = get_roots(1, 2, 3)
 ```
 
-Запуск на Windows происходит аналогично.
+Scrit requires installed Python interpretator, version 3.5
 
-# Цели проекта
+Linux launch:
 
-Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
+```bash
+python tests.py # you man need to call python3 instead python, depends on one's operating system settings
+```
+
+The launch on Windows is done in similar way.
+
+# Project aims
+
+The code is developed for educational purposes. Check web-development course ― DEVMAN.org
